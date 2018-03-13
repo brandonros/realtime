@@ -1,0 +1,23 @@
+{
+  "name": "realtime",
+  "version": "1.0.0",
+  "description": "node.js + PostgreSQL + WebSockets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonros/realtime.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandonros/realtime/issues"
+  },
+  "homepage": "https://github.com/brandonros/realtime#readme",
+  "dependencies": {
+    "pg": "^7.4.1",
+    "ws": "^5.0.0"
+  }
+}
