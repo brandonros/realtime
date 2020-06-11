@@ -1,5 +1,6 @@
 const pg = require('pg')
 const WebSocket = require('ws')
+const squel = require('squel').useFlavour('postgres')
 
 const run = async () => {
   const db = new pg.Client({
@@ -16,7 +17,7 @@ const run = async () => {
   await db.query('LISTEN delete')
   await db.query('LISTEN update')
   console.log('Starting WebSocket server...')
-  var server = new WebSocket.Server({
+  const server = new WebSocket.Server({
     port: 8080
   })
   server.on('connection', async (connection) => {
